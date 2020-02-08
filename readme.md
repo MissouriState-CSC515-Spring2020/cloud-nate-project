@@ -1,3 +1,4 @@
 # Repository for class project
 
-This readme is a placeholder that should be replaced
+Home work 2
+Implements three static webpages with images and links to all pages
