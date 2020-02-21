@@ -1,6 +1,6 @@
 # Checkpoint 3, Single page web app using React
 
-Using react and bootstrap.
+Using react implements routers.
 
 Start web app using, npm start
 
