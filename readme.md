@@ -1,4 +1,6 @@
-# Checkpoint 3, Single page web app using React and bootstrap.
+# Checkpoint 3, Single page web app using React
+
+Using react and bootstrap.
 
 Start web app using, npm start
 
