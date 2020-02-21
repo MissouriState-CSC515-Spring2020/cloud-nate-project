@@ -9,6 +9,8 @@ nav{
   min-height: 5vh;
   background: rgb(73, 79, 82);
   color: white;
+  padding-right: 20%;
+  padding-left:20%;
 }
 
 .nav-links{
