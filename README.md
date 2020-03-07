@@ -1,4 +1,5 @@
-Checkpoint 4, Convert chkpt3: Single page web app to be a Progressive Web Application.
+## Checkpoint 4
+ Convert chkpt3: Single page web app to be a Progressive Web Application.
  project should meet the core requirements of the progressive web application checklist including working offline and being installable.
 
 Start web app using, npm start
