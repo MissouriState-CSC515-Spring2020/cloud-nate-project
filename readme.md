@@ -1,3 +1,5 @@
 # Repository for class project
 
-Single page, rollup starter app implementation.
+Home work 2
+Implements three static webpages with images and links to all pages
+
