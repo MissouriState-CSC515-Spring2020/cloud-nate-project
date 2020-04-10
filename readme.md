@@ -1,4 +1,4 @@
-Checkpoint 5, Update application to be a YouTube video site. Use the YouTube Data API to pull data: https://developers.google.com/youtube/v3
+###Checkpoint 5, Update application to be a YouTube video site. Use the YouTube Data API to pull data: https://developers.google.com/youtube/v3
 
 Dynamically list video information by calling the YouTube data api on all views. You can hard code na initial selector such as a channel id, playlist or search term.
 
