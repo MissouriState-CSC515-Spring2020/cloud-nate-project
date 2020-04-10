@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 5vh;
+  background: rgb(73, 79, 82);
+  color: white;
+  padding-right: 20%;
+  padding-left:20%;
+}
+
+.nav-links{
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 400;
+  font-size: 25px;
+  list-style: none;
+}
+
+body {
+  padding-top: 2rem;
+}
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.container1 {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 2.5%;
+  padding-bottom: 20px;
+}
+.container2 {
+  border: 1px solid black;
+  margin: 2.5%;
+}
