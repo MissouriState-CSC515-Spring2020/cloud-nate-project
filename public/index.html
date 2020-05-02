@@ -1,134 +1,44 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
-<head lang='en'>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width'>
-	<title>A page of recent photos</title>
-
-	<!-- Bootstrap core CSS -->
-	<link href="bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	<link href="starter-template.css" rel="stylesheet">
-
-
-	<style>
-		body {
-			font-family: 'Helvetica Neue', Arial, sans-serif;
-			color: #333;
-			font-weight: 300;
-		}
-	</style>
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" sizes="64x64 32x32 24x24 16x16" href="%PUBLIC_URL%/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="192x192" href="%PUBLIC_URL%/logo192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="%PUBLIC_URL%/logo192.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="HW6 implements Code Splitting" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <title>HW6: PWA with YT API using React and Code Splitting</title>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		<a class="navbar-brand" href="#">Menu</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
-			aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-				</li>
-				<li class="nav-item active">
-					<a class="nav-link" href="deets.html">Details<span class="sr-only"></span></a>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">Categories</a>
-					<div class="dropdown-menu" aria-labelledby="dropdown01">
-						<a class="dropdown-item" href="bigfish.html">Big Fish</a>
-						<a class="dropdown-item" href="bigfish.html">Little Fish</a>
-						<!--<a class="dropdown-item" href="littlefish.html">Little Fish</a> -->
-					</div>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<main role="main" class="container">
-
-		<div class="starter-template">
-			<h1>A Page About A User's Most Recent Photos</h1>
-			<p class="lead">Below are three of a user's most recently viewed photos.</p>
-
-			<br>
-		</div>
-
-		<div class="album py-5 bg-light">
-			<div class="container">
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<title>Big Fish</title>
-							<a href="deets.html"><img src="shark1.jpg" alt="Shark photo one" height="100%"
-									width="100%"></a>
-							<rect width="100%" height="100%" fill="#55595c" />
-							<div class="card-body">
-								<p class="card-text">Last opened 2/7/20 at 01:33:32</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
-									<small class="text-muted">2/7/20</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-							<title>Big Fish</title>
-							<a href="deets.html"><img src="shark2.jpg" alt="Shark photo one" height="100%"
-									width="100%"></a>
-							<div class="card-body">
-								<p class="card-text">Last opened 2/7/20 at 11:00:02</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
-									<small class="text-muted">2/6/20</small>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="card mb-4 shadow-sm">
-
-							<title>Small Fish</title>
-							<a href="deets.html"><img src="goldfsh.jpg" alt=" Goldfish photo one" height="100%"
-									width="100%"></a>
-							<div class="card-body">
-								<p class="card-text">Last opened 2/7/20 at 01:00:20</p>
-								<div class="d-flex justify-content-between align-items-center">
-									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-									</div>
-									<small class="text-muted">2/5/20</small>
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-
-				</div>
-			</div>
-		</div>
-
-
-	</main><!-- /.container -->
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-		crossorigin="anonymous"></script>
-	<script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script>
-	<script src="bootstrap.bundle.min.js"
-		integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm"
-		crossorigin="anonymous"></script>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('worker.js').then(function (registration) {
+          console.log('Worker registration successful', registration.scope);
+        }, function (err) {
+          console.log('Worker registration failed', err);
+        }).catch(function (err) {
+          console.log(err);
+        });
+      });
+    } else {
+      console.log('Service Worker is not supported by browser.');
+    }
+  </script>
+  <!--
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
 </body>
 
 </html>
